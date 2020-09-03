@@ -1,0 +1,16 @@
+{% entends 'layout.html' %}
+
+{% block content %}
+      <h3>Home Page</h3>
+
+      <div class="container">
+      {# <!-- Jinja Statement = {%, %}--> #}  
+      {# <!-- Jijna Expressions = {{  }}--> #}
+      
+      <ul class ="list-group">
+          {% for user in users %}
+                <li class="list-group-item">{{ user}}</li>
+          {% endfor %}
+      </ul>
+      </div>
+{% endblock %}
